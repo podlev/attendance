@@ -13,11 +13,11 @@
   <property name="windowTitle">
    <string>Редактор студентов</string>
   </property>
-  <widget class="QWidget" name="verticalLayoutWidget">
+  <widget class="QWidget" name="">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>10</y>
+     <x>11</x>
+     <y>11</y>
      <width>781</width>
      <height>581</height>
     </rect>
@@ -27,40 +27,32 @@
      <widget class="QTableWidget" name="tableWidget"/>
     </item>
     <item>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="delete_button">
       <property name="text">
        <string>Удалить выбранного студента</string>
       </property>
      </widget>
     </item>
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QSplitter" name="splitter">
-        <property name="orientation">
-         <enum>Qt::Horizontal</enum>
-        </property>
-        <widget class="QLineEdit" name="lineEdit"/>
-       </widget>
+       <widget class="QLineEdit" name="student_edit"/>
       </item>
       <item>
-       <widget class="QListView" name="listView"/>
-      </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_2">
+       <widget class="QPushButton" name="add_button">
         <property name="text">
          <string>Добавить нового студента</string>
         </property>
        </widget>
       </item>
-      <item>
-       <widget class="QPushButton" name="pushButton_3">
-        <property name="text">
-         <string>Импорт из CSV</string>
-        </property>
-       </widget>
-      </item>
      </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="import_button">
+      <property name="text">
+       <string>Импорт из CSV</string>
+      </property>
+     </widget>
     </item>
    </layout>
   </widget>
