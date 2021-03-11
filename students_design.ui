@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>Редактор студентов</string>
   </property>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>11</x>
@@ -36,7 +36,34 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QLineEdit" name="student_edit"/>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>ФИО</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="student_edit">
+        <property name="toolTip">
+         <string>Фамилия Имя Отчество</string>
+        </property>
+        <property name="inputMask">
+         <string/>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Группа*</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="group_edit"/>
       </item>
       <item>
        <widget class="QPushButton" name="add_button">
