@@ -14,45 +14,91 @@
    <string>Электронный журнал</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>781</width>
+      <x>20</x>
+      <y>13</y>
+      <width>771</width>
       <height>561</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QVBoxLayout" name="verticalLayout">
        <item>
-        <widget class="QPushButton" name="group_button">
+        <widget class="QLabel" name="label">
          <property name="text">
-          <string>Группы</string>
+          <string>Редактировать</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="student_button">
-         <property name="text">
-          <string>Студенты</string>
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QPushButton" name="group_button">
+           <property name="text">
+            <string>Добавить/изменить группы</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="student_button">
+           <property name="text">
+            <string>Добавить/изменить студентов</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="Line" name="line">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="attendance_button">
+        <widget class="QLabel" name="label_3">
          <property name="text">
           <string>Посещаемость</string>
          </property>
         </widget>
        </item>
        <item>
-        <widget class="QPushButton" name="test_button">
+        <widget class="QPushButton" name="attendance_button">
          <property name="text">
-          <string>Тест</string>
+          <string>Выставить посещаемость</string>
          </property>
         </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_4">
+         <property name="text">
+          <string>Вывести журнал посещаемости</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Группа</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QComboBox" name="group_edit"/>
+         </item>
+        </layout>
        </item>
       </layout>
      </item>
@@ -60,6 +106,22 @@
       <widget class="QTableWidget" name="tableWidget"/>
      </item>
     </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>630</y>
+      <width>769</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Выгрзуить в CSV</string>
+    </property>
    </widget>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>

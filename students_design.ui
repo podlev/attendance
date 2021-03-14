@@ -16,20 +16,55 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>11</x>
-     <y>11</y>
+     <x>10</x>
+     <y>10</y>
      <width>781</width>
      <height>581</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Фильтр по группе</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="group_filter"/>
+      </item>
+     </layout>
+    </item>
+    <item>
      <widget class="QTableWidget" name="tableWidget"/>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_5">
+      <property name="text">
+       <string>Удалить выбранного студента</string>
+      </property>
+     </widget>
     </item>
     <item>
      <widget class="QPushButton" name="delete_button">
       <property name="text">
-       <string>Удалить выбранного студента</string>
+       <string>Удалить</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_3">
+      <property name="text">
+       <string>Добавить нового студента </string>
       </property>
      </widget>
     </item>
@@ -58,7 +93,7 @@
       <item>
        <widget class="QLabel" name="label">
         <property name="text">
-         <string>Группа*</string>
+         <string>В группу</string>
         </property>
        </widget>
       </item>
@@ -68,7 +103,7 @@
       <item>
        <widget class="QPushButton" name="add_button">
         <property name="text">
-         <string>Добавить нового студента</string>
+         <string>Добавить</string>
         </property>
        </widget>
       </item>
@@ -76,6 +111,9 @@
     </item>
     <item>
      <widget class="QPushButton" name="import_button">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="text">
        <string>Импорт из CSV</string>
       </property>

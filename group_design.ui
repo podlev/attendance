@@ -27,9 +27,30 @@
      <widget class="QTableWidget" name="tableWidget"/>
     </item>
     <item>
-     <widget class="QPushButton" name="delete_button">
+     <widget class="QLabel" name="label">
       <property name="text">
        <string>Удалить выбранную группу</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="delete_button">
+      <property name="text">
+       <string>Удалить</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="text">
+       <string>Добавить новую группу</string>
       </property>
      </widget>
     </item>
@@ -38,12 +59,19 @@
       <item>
        <layout class="QHBoxLayout" name="horizontalLayout">
         <item>
+         <widget class="QLabel" name="label_3">
+          <property name="text">
+           <string>Группа</string>
+          </property>
+         </widget>
+        </item>
+        <item>
          <widget class="QLineEdit" name="group_edit"/>
         </item>
         <item>
          <widget class="QPushButton" name="add_button">
           <property name="text">
-           <string>Добавить новую группу</string>
+           <string>Добавить</string>
           </property>
          </widget>
         </item>
